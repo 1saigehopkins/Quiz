@@ -10,23 +10,55 @@
 
        var name = prompt("Hello, what is your name?");
          if(name === "Carrot") {
-           $("body").append("Well " + name + ", what a pleasure to be speaking with you!");
+           $(".one").append("Hello, what is your name?");
+           $(".two").append("Well " + name + ", what a pleasure to be speaking with you!");
+           $(".three").append(name);
          } else {
-           $("body").append("Hmmm. I thought it would be something else. Something with a more orange flare... but nevermind that.");
+           $(".one").append("Hello, what is your name?");
+           $(".two").append(name);
+           $(".three").append("Hmmm. I thought it would be something else. Something like a citrus fruit... but nevermind that.");
 }
         console.log(name);
 
         var n1 = prompt("Do you believe people are capable of levitating?")
-       if(n1 === "yes", "ya", "idk"){
-         $(".one").append("What a floriferous shrub of a brain you have.");
+       if(n1 === "yes"){
+         $(".four").append("Do you believe people are capable of levitating?");
+         $(".five").append(n1);
+         $(".six").append("What a floriferous shrub of a brain you have.");
+
        } else {
-         $(".two").append(" " + name + "! Not sure how this'll make you feel... but I agree.");
+         $(".four").append("Do you believe people are capable of levitating?");
+         $(".five").append(n1);
+         $(".six").append(" " + name + "! Not sure if you even care... but I feel the same way.");
 }
        console.log(n1);
+
 
          });
 
     </script>
+
+    <style>
+
+    body{
+      background-color: #2a2225;
+      font-family: georgia;
+    }
+
+     .one, .three, .four, .six{
+      color: grey;
+      font-size: 1.2em;
+      width: 390px;
+    }
+
+     .two, .five{
+      color: #7e87fc;
+      width: 390px;
+      font-size: 1.5em;
+    }
+
+
+    </style>
   </head>
   <body>
     <div class="one"></div>
@@ -39,6 +71,12 @@
     <div class="eight"></div>
     <div class="nine"></div>
     <div class="ten"></div>
+    <div class="eleven"></div>
+    <div class="twelve"></div>
+    <div class="thirteen"></div>
+    <div class="fourteen"></div>
+    <div class="fifteen"></div>
+
 
   </body>
 </html>
