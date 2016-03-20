@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QUIZ</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+
+  $(document).ready(function(){
+
+       var name = prompt("Hello, what is your name?");
+         if(name === "Carrot") {
+           $("body").append("Well " + name + ", what a pleasure to be speaking with you!");
+         } else {
+           $("body").append("Hmmm. I thought it would be something else. Something with a more orange flare... but nevermind that.");
+}
+        console.log(name);
+
+        var n1 = prompt("Do you believe people are capable of levitating?")
+       if(n1 === "yes", "ya", "idk"){
+         $(".one").append("What a floriferous shrub of a brain you have.");
+       } else {
+         $(".two").append(" " + name + "! Not sure how this'll make you feel... but I agree.");
+}
+       console.log(n1);
+
+         });
+
+    </script>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+    <div class="eight"></div>
+    <div class="nine"></div>
+    <div class="ten"></div>
+
+  </body>
+</html>
